@@ -4,7 +4,7 @@
 
 > Objetivo:
 >	- Criar dashboard interativo
->		○ (*Obrigatório 4 insights) Criar storytelling com insights relevantes da variação de preços, como: 
+>	  o (*Obrigatório 4 insights) Criar storytelling com insights relevantes da variação de preços, como: 
 >			§ situações geopoliticas, 
 >			§ crises econômicas, 
 >			§ demanda global por energia, 
