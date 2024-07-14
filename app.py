@@ -18,6 +18,9 @@ st.sidebar.markdown("___")
 
 
 if selected == 'Página Inicial':
+    st.sidebar.markdown("# Informações Gerais")
+    st.sidebar.markdown('''### Desenvolvedor:<BR> Wesley Estevão dos Santos<br><BR>Turma: 3DTAT<br><br> Formação: POSTECH''', unsafe_allow_html=True)
+    st.sidebar.markdown("___")
     st.title(":orange[Análise do cenário do combústivel no Brasil]")
     st.header(":orange[Cenário do Combustível]")
     st.markdown("Desenvolvedor: Wesley Estevão dos Santos")
@@ -50,6 +53,9 @@ Fonte: <a href="http://www.ipeadata.gov.br/ExibeSerie.aspx?module=m&serid=165097
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 elif selected == 'Análise dos dados':
+    st.sidebar.markdown("# Informações Gerais")
+    st.sidebar.markdown('''### Desenvolvedor:<BR> Wesley Estevão dos Santos<br><BR>Turma: 3DTAT<br><br> Formação: POSTECH''', unsafe_allow_html=True)
+    st.sidebar.markdown("___")
     st.header(":orange[Análise dos dados]")
     
     st.subheader(":orange[Iniciando o ETL dos dados]", divider="orange")
@@ -111,7 +117,11 @@ elif selected == 'Dashboard':
         menu_title = 'Dashboard Menu',options=[ 'Análise Histórica','Modelo de Predição','Conclusão'], 
         icons = ['kanban', 'kanban','kanban', 'house'],
         menu_icon = "cast", default_index = 0,)
-
+    
+    st.sidebar.markdown("# Informações Gerais")
+    st.sidebar.markdown('''### Desenvolvedor:<BR> Wesley Estevão dos Santos<br><BR>Turma: 3DTAT<br><br> Formação: POSTECH''', unsafe_allow_html=True)
+    st.sidebar.markdown("___")
+    
     df = pd.read_csv('https://github.com/wesleyesantos/Techchallenge4/raw/main/preco_combustivel.csv',sep=';')  
     df['data'] = pd.to_datetime(df['data'])
     df_impact = df[(df['data'].dt.year == 1990) | (df['data'].dt.year == 2000) | (df['data'].dt.year == 2008) | (df['data'].dt.year == 2011) | (df['data'].dt.year == 2022)]
@@ -366,6 +376,4 @@ elif selected == 'Bibliografia':
 
                ''')
     
-    st.sidebar.markdown("# Informações Gerais")
-    st.sidebar.markdown('''### Desenvolvedor:<BR> Wesley Estevão dos Santos<br><BR>Turma: 3DTAT<br><br> Formação: POSTECH''', unsafe_allow_html=True)
-    st.sidebar.markdown("___")
+
