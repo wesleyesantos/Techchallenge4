@@ -95,7 +95,7 @@ elif selected == 'Análise dos dados':
     df = pd.read_csv('https://github.com/wesleyesantos/Techchallenge4/raw/main/preco_combustivel.csv',sep=';')  
     df['data'] = pd.to_datetime(df['data'])
     fig_date = px.bar(df, x= 'data', y='preco_barril_usd', title= 'Valor Petróleo Brent por dia(USD)', labels={'data': 'Data', 'preco_barril_usd': 'Preço'}, width=1200, height=500)
-    st.plotly_chart(fig_date)
+    st.plotly_chart(fig_date, use_container_width=True)
 
     st.markdown('''##### Analisando o gráfico identifiquei alguns dos maiores picos que foram nos anos:''')
     st.markdown('''
