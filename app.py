@@ -18,9 +18,6 @@ st.sidebar.markdown("___")
 
 
 if selected == 'Página Inicial':
-    st.sidebar.markdown("# Informações Gerais")
-    st.sidebar.markdown('''### Desenvolvedor:<BR> Wesley Estevão dos Santos<br><BR>Turma: 3DTAT<br><br> Formação: POSTECH''', unsafe_allow_html=True)
-    st.sidebar.markdown("___")
     st.title(":orange[Análise do cenário do combústivel no Brasil]")
     st.header(":orange[Cenário do Combustível]")
     st.markdown("Desenvolvedor: Wesley Estevão dos Santos")
@@ -368,3 +365,7 @@ elif selected == 'Bibliografia':
                - https://oilprice.com
 
                ''')
+    
+    st.sidebar.markdown("# Informações Gerais")
+    st.sidebar.markdown('''### Desenvolvedor:<BR> Wesley Estevão dos Santos<br><BR>Turma: 3DTAT<br><br> Formação: POSTECH''', unsafe_allow_html=True)
+    st.sidebar.markdown("___")
