@@ -95,7 +95,7 @@ elif selected == 'Análise dos dados':
     df = pd.read_csv('https://github.com/wesleyesantos/Techchallenge4/raw/main/preco_combustivel.csv',sep=';')  
     df['data'] = pd.to_datetime(df['data'])
     fig_date = px.bar(df, x= 'data', y='preco_barril_usd', title= 'Valor Petróleo Brent por dia(USD)', labels={'data': 'Data', 'preco_barril_usd': 'Preço'}, width=1200, height=500)
-    st.plotly_chart(fig_date, use_container_width=True)
+    st.plotly_chart(fig_date)
 
     st.markdown('''##### Analisando o gráfico identifiquei alguns dos maiores picos que foram nos anos:''')
     st.markdown('''
@@ -324,14 +324,14 @@ elif selected == 'Dashboard':
 
         st.subheader(":orange[Plotagens do modelo]",divider="orange",)
         st.markdown('### Predição de dados')
-        image_path = r"C:\Users\Wesley\Desktop\Postech - Módulo 4\Techchallenge 4\predição.png"
-        st.image(image_path, caption='Predição de Preços', use_column_width=True)
+        image_path = "https://github.com/wesleyesantos/Techchallenge4/blob/main/predi%C3%A7%C3%A3o.png"
+        st.image(image_path , use_column_width=True)
         st.markdown('### Componentes')
-        image_path = r"C:\Users\Wesley\Desktop\Postech - Módulo 4\Techchallenge 4\componentes.png"
-        st.image(image_path, caption='Componentes', use_column_width=True)
+        image_path = "https://github.com/wesleyesantos/Techchallenge4/blob/main/componentes.png"
+        st.image(image_path, use_column_width=True)
         st.markdown('### MAPE')
-        image_path = r"C:\Users\Wesley\Desktop\Postech - Módulo 4\Techchallenge 4\mape.png"
-        st.image(image_path, caption='MAPE', use_column_width=True)
+        image_path = "https://github.com/wesleyesantos/Techchallenge4/blob/main/mape.png"
+        st.image(image_path, use_column_width=True)
 
         st.subheader(":orange[Performances]",divider="orange",)
         st.markdown('''O modelo que criei evolui bastante comecei trabalhando com ele onde me trazia um MAPE de 60%, era bem crítico, sabendo que não dava pra utilizar daquela forma continuei tentando o melhor range de data e configuração do modelo, testei a divisão da base 70/30, mas por fim resolvi manter as divisões das bases de treino e teste por 80/20; para o range de tempo utilizado no modelo foi bem dificil pra mim já trabalhei com forecast de curto prazo mas o histórico que utilizava era bem curto e não era ML mas sim outros métodos, depois de muito tempo percebi que o melhor era aumentar o range de tempo que o modelo ganhava um pouco mais de performance, ajustei o range de tempo, inclui a normalização dos dados e trabalhei no outlier que foi impactado pelo covid, no final esse foi o melhor resultado que consegui alcançar para esse modelo trazendo uma análise diária dos dados.''')
@@ -345,7 +345,7 @@ elif selected == 'Dashboard':
 
         st.markdown('''### Os anos de 1990, 2000, 2008, 2011 e 2022, destacam como eventos geopolíticos, crises econômicas, demanda global e decisões estratégicas de produção influenciam diretamente os preços do petróleo Brent, tornando-o um mercado altamente volátil e sensível a fatores externos e internos.''')
         st.markdown('''### Para meu modelo de predição mesmo o fazendo tantas vezes para chegar no melhor resultado que poderia chegar a predição dele demonstrou que os preços irão subir e que terão alguns picos de queda.''')
-        image_path = r"C:\Users\Wesley\Desktop\Postech - Módulo 4\Techchallenge 4\Minions.gif"
+        image_path = "https://github.com/wesleyesantos/Techchallenge4/blob/main/Minions.gif"
         st.image(image_path,width=1000)
 
 
