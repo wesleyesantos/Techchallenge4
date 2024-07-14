@@ -118,10 +118,6 @@ elif selected == 'Dashboard':
         icons = ['kanban', 'kanban','kanban', 'house'],
         menu_icon = "cast", default_index = 0,)
     
-    st.sidebar.markdown("# Informações Gerais")
-    st.sidebar.markdown('''### Desenvolvedor:<BR> Wesley Estevão dos Santos<br><BR>Turma: 3DTAT<br><br> Formação: POSTECH''', unsafe_allow_html=True)
-    st.sidebar.markdown("___")
-    
     df = pd.read_csv('https://github.com/wesleyesantos/Techchallenge4/raw/main/preco_combustivel.csv',sep=';')  
     df['data'] = pd.to_datetime(df['data'])
     df_impact = df[(df['data'].dt.year == 1990) | (df['data'].dt.year == 2000) | (df['data'].dt.year == 2008) | (df['data'].dt.year == 2011) | (df['data'].dt.year == 2022)]
@@ -324,13 +320,13 @@ elif selected == 'Dashboard':
 
         st.subheader(":orange[Plotagens do modelo]",divider="orange",)
         st.markdown('### Predição de dados')
-        image_path = "https://github.com/wesleyesantos/Techchallenge4/blob/main/predi%C3%A7%C3%A3o.png"
+        image_path = "https://raw.githubusercontent.com/wesleyesantos/Techchallenge4/main/predição.png"
         st.image(image_path , use_column_width=True)
         st.markdown('### Componentes')
-        image_path = "https://github.com/wesleyesantos/Techchallenge4/blob/main/componentes.png"
+        image_path = "https://raw.githubusercontent.com/wesleyesantos/Techchallenge4/main/componentes.png"
         st.image(image_path, use_column_width=True)
         st.markdown('### MAPE')
-        image_path = "https://github.com/wesleyesantos/Techchallenge4/blob/main/mape.png"
+        image_path = "https://raw.githubusercontent.com/wesleyesantos/Techchallenge4/main/mape.png"
         st.image(image_path, use_column_width=True)
 
         st.subheader(":orange[Performances]",divider="orange",)
@@ -345,8 +341,8 @@ elif selected == 'Dashboard':
 
         st.markdown('''### Os anos de 1990, 2000, 2008, 2011 e 2022, destacam como eventos geopolíticos, crises econômicas, demanda global e decisões estratégicas de produção influenciam diretamente os preços do petróleo Brent, tornando-o um mercado altamente volátil e sensível a fatores externos e internos.''')
         st.markdown('''### Para meu modelo de predição mesmo o fazendo tantas vezes para chegar no melhor resultado que poderia chegar a predição dele demonstrou que os preços irão subir e que terão alguns picos de queda.''')
-        image_path = "https://github.com/wesleyesantos/Techchallenge4/blob/main/Minions.gif"
-        st.image(image_path,width=1000)
+        image_path = "https://raw.githubusercontent.com/wesleyesantos/Techchallenge4/main/Minions.gif"
+        st.image(image_path,use_column_width=True )
 
 
 
@@ -376,4 +372,3 @@ elif selected == 'Bibliografia':
 
                ''')
     
-
