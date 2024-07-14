@@ -356,7 +356,7 @@ elif selected == 'Bibliografia':
 
                - Relatório Anual da ANP (Agência Nacional do Petróleo, Gás Natural e Biocombustíveis) - Publicações anuais que podem fornecer informações históricas e contextuais sobre o mercado de petróleo. https://www.gov.br/anp/pt-br/
                
-               -Boletim Mensal de Energia do MME (Ministério de Minas e Energia) - Boletins mensais com dados históricos e análises do setor energético.https://www.gov.br/mme/pt-br
+               - Boletim Mensal de Energia do MME (Ministério de Minas e Energia) - Boletins mensais com dados históricos e análises do setor energético.https://www.gov.br/mme/pt-br
                
                - Relatório Anual da OPEP (Organização dos Países Exportadores de Petróleo) - Relatórios que podem incluir dados e análises sobre o impacto de crises geopolíticas nos preços do petróleo. https://www.opec.org/opec_web/en/
                
