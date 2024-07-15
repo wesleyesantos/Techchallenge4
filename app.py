@@ -3,7 +3,6 @@ from streamlit_option_menu import option_menu
 import pandas as pd
 import plotly.express as px
 
-st.set_option("server.headless", True)
 st.set_page_config(page_title="Análise do Preço do Petróleo Brent",layout="wide", page_icon="https://github.com/wesleyesantos/Techchallenge4/raw/main/ico.ico", initial_sidebar_state="expanded")
 st.sidebar.image('https://github.com/wesleyesantos/Techchallenge4/blob/main/fiap_alura.png?raw=true')
 with st.sidebar:
