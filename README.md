@@ -39,7 +39,7 @@ Você pode acessar a aplicação ao vivo através do seguinte link:
 
 ## 📚 DATASET"
 
-[Base utilizadal](https://www.ipeadata.gov.br/ExibeSerie.aspx?module=m&serid=1650971490&oper=view/)
+[Base utilizada](https://www.ipeadata.gov.br/ExibeSerie.aspx?module=m&serid=1650971490&oper=view/)
 
 ---
 
