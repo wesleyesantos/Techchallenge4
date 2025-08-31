@@ -21,7 +21,6 @@ Utilizando o link disponibilizado baixar a base ou realizar link direto com o li
 ### Bibliotecas
 #### Gráficos 
 - **Plotly**
-- **matplotlib**
 #### Análise Exploratória
 - **Pandas**
 - **Numpy**
