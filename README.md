@@ -1,4 +1,4 @@
-# Análise Exploratória com Streamlit - Análise do cenário do combústivel no Brasil
+# Análise Exploratória com Python e Deploy em Streamlit - Análise do cenário do combústivel no Brasil
 
 Criar análise com insights relevantes sobre o combustível no Brasil utilizando dados disponibilizados pela FIAP.
 
